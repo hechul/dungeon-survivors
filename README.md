@@ -22,4 +22,8 @@ npm run build
 
 This project runs as a mobile-first vertical web game and is suitable for an Apps in Toss WebView conversion path. It still needs core-loop fixes, Apps in Toss configuration, mobile QA, gameplay tuning, and submission asset preparation before it should be treated as a release candidate.
 
-See [docs/day-1-intake-audit.md](docs/day-1-intake-audit.md) for the initial intake review.
+See:
+
+- [docs/day-1-intake-audit.md](docs/day-1-intake-audit.md) for the initial intake review
+- [docs/HANDOFF.md](docs/HANDOFF.md) for developer handoff notes
+- [docs/PLAYTEST.md](docs/PLAYTEST.md) for smoke test and mobile QA checks
