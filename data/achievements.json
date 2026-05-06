@@ -1,0 +1,62 @@
+{
+  "first_blood": {
+    "name": "첫 처치",
+    "description": "적을 처음 처치",
+    "condition": { "type": "kills", "value": 1 },
+    "reward": { "gold": 10 }
+  },
+  "kill_100": {
+    "name": "100명 사냥꾼",
+    "description": "한 런에서 100마리 처치",
+    "condition": { "type": "kills_run", "value": 100 },
+    "reward": { "gold": 50 }
+  },
+  "kill_500": {
+    "name": "학살자",
+    "description": "한 런에서 500마리 처치",
+    "condition": { "type": "kills_run", "value": 500 },
+    "reward": { "gold": 200 }
+  },
+  "survive_5min": {
+    "name": "5분 생존",
+    "description": "5분 이상 생존",
+    "condition": { "type": "survive", "value": 300 },
+    "reward": { "gold": 100 }
+  },
+  "survive_10min": {
+    "name": "10분 생존",
+    "description": "10분 이상 생존",
+    "condition": { "type": "survive", "value": 600 },
+    "reward": { "gold": 250 }
+  },
+  "survive_30min": {
+    "name": "마왕 토벌",
+    "description": "30분 클리어",
+    "condition": { "type": "clear", "value": 1 },
+    "reward": { "gold": 1000 }
+  },
+  "level_20": {
+    "name": "전사의 길",
+    "description": "한 런에서 레벨 20 달성",
+    "condition": { "type": "level_run", "value": 20 },
+    "reward": { "gold": 150 }
+  },
+  "boss_skeleton_king": {
+    "name": "해골왕 처단",
+    "description": "해골왕 처치",
+    "condition": { "type": "boss_killed", "value": "skeleton_king" },
+    "reward": { "gold": 80 }
+  },
+  "boss_dragon": {
+    "name": "용사",
+    "description": "드래곤 처치",
+    "condition": { "type": "boss_killed", "value": "dragon" },
+    "reward": { "gold": 300 }
+  },
+  "weapon_max": {
+    "name": "장인",
+    "description": "무기를 최대 레벨까지 강화",
+    "condition": { "type": "weapon_max", "value": 1 },
+    "reward": { "gold": 200 }
+  }
+}

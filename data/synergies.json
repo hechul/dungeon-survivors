@@ -1,0 +1,233 @@
+{
+  "synergies": [
+    {
+      "id": "blade_dance",
+      "name": "검무",
+      "description": "검 + 회전날 — 검 데미지 +25%, 회전날 회전 +30%",
+      "tier": 2,
+      "require": { "weapons": ["sword", "orbit_blade"] },
+      "effects": [
+        { "type": "weaponMul", "weapons": ["sword"], "key": "damage", "mul": 1.25 },
+        { "type": "weaponMul", "weapons": ["orbit_blade"], "key": "rotateSpeed", "mul": 1.3 }
+      ]
+    },
+    {
+      "id": "stormcaller",
+      "name": "폭풍술사",
+      "description": "마법구 + 번개 — 모든 데미지 +20%, 쿨다운 -10%",
+      "tier": 2,
+      "require": { "weapons": ["magic_orb", "lightning"] },
+      "effects": [
+        { "type": "playerStat", "key": "atk", "mul": 1.2 },
+        { "type": "playerStat", "key": "cooldownReduction", "add": 0.1 }
+      ]
+    },
+    {
+      "id": "scorcher",
+      "name": "불태우는 자",
+      "description": "화염장판 + 채찍 — 범위 무기 +30% 데미지",
+      "tier": 2,
+      "require": { "weapons": ["fire_aura", "whip"] },
+      "effects": [
+        { "type": "weaponMul", "weapons": ["fire_aura", "whip"], "key": "damage", "mul": 1.3 }
+      ]
+    },
+    {
+      "id": "venom_lord",
+      "name": "독왕",
+      "description": "독장판 + 회전날 — 독 DPS +50%, 회전날 데미지 +20%",
+      "tier": 2,
+      "require": { "weapons": ["poison_field", "orbit_blade"] },
+      "effects": [
+        { "type": "weaponMul", "weapons": ["poison_field"], "key": "damage", "mul": 1.5 },
+        { "type": "weaponMul", "weapons": ["orbit_blade"], "key": "damage", "mul": 1.2 }
+      ]
+    },
+    {
+      "id": "frostfire",
+      "name": "빙염",
+      "description": "한기 + 화염장판 — 빙결 시간 +50%, 화염 데미지 +25%",
+      "tier": 2,
+      "require": { "weapons": ["frost", "fire_aura"] },
+      "effects": [
+        { "type": "weaponMul", "weapons": ["frost"], "key": "freezeMs", "mul": 1.5 },
+        { "type": "weaponMul", "weapons": ["fire_aura"], "key": "damage", "mul": 1.25 }
+      ]
+    },
+    {
+      "id": "ricochet",
+      "name": "도탄",
+      "description": "마법구 + 부메랑 — 투사체 사거리 +40%",
+      "tier": 2,
+      "require": { "weapons": ["magic_orb", "boomerang"] },
+      "effects": [
+        { "type": "weaponMul", "weapons": ["magic_orb", "boomerang"], "key": "range", "mul": 1.4 }
+      ]
+    },
+    {
+      "id": "deadly_focus",
+      "name": "치명",
+      "description": "치명타 + 치명타 강화 — 치명 시 +0.5배 추가",
+      "tier": 2,
+      "require": { "passives": ["crit_chance", "crit_dmg"] },
+      "effects": [
+        { "type": "playerStat", "key": "critDmg", "add": 0.5 }
+      ]
+    },
+    {
+      "id": "vampire",
+      "name": "흡혈귀",
+      "description": "흡혈 + 회복력 — 회복량 2배",
+      "tier": 2,
+      "require": { "passives": ["lifesteal", "regen"] },
+      "effects": [
+        { "type": "playerStat", "key": "lifesteal", "mul": 2 },
+        { "type": "playerStat", "key": "regenRate", "mul": 2 }
+      ]
+    },
+    {
+      "id": "tank",
+      "name": "성벽",
+      "description": "방어구 + 가시 + 체력 강화 — 방어 +2, 가시 +0.3",
+      "tier": 3,
+      "require": { "passives": ["armor", "thorns", "max_hp"] },
+      "effects": [
+        { "type": "playerStat", "key": "armor", "add": 2 },
+        { "type": "playerStat", "key": "thorns", "add": 0.3 }
+      ]
+    },
+    {
+      "id": "speed_demon",
+      "name": "질풍",
+      "description": "신속 + 쿨다운 + 강타 — 이속 +15%, 쿨다운 추가 -10%",
+      "tier": 3,
+      "require": { "passives": ["move_speed", "cooldown", "knockback"] },
+      "effects": [
+        { "type": "playerStat", "key": "speed", "mul": 1.15 },
+        { "type": "playerStat", "key": "cooldownReduction", "add": 0.1 }
+      ]
+    },
+    {
+      "id": "executioner",
+      "name": "처형자",
+      "description": "검 + 채찍 + 강타 — 근접 무기 데미지 +35%",
+      "tier": 3,
+      "require": { "weapons": ["sword", "whip"], "passives": ["knockback"] },
+      "effects": [
+        { "type": "weaponMul", "weapons": ["sword", "whip"], "key": "damage", "mul": 1.35 }
+      ]
+    },
+    {
+      "id": "elemental_storm",
+      "name": "원소 폭풍",
+      "description": "번개 + 화염 + 한기 — 원소 무기 +40%, 모든 쿨다운 -15%",
+      "tier": 4,
+      "require": { "weapons": ["lightning", "fire_aura", "frost"] },
+      "effects": [
+        { "type": "weaponMul", "weapons": ["lightning", "fire_aura", "frost"], "key": "damage", "mul": 1.4 },
+        { "type": "playerStat", "key": "cooldownReduction", "add": 0.15 }
+      ]
+    },
+    {
+      "id": "berserker_lord",
+      "name": "광전사 군주",
+      "description": "광전사 + 흡혈 + 강타 — 광전사 발동 시 +60%로 강화",
+      "tier": 3,
+      "require": { "passives": ["berserk", "lifesteal", "knockback"] },
+      "effects": [
+        { "type": "playerStat", "key": "berserkBonusBoost", "add": 0.3 }
+      ]
+    },
+    {
+      "id": "scholar",
+      "name": "학자",
+      "description": "지식 + 행운 — 경험치 +20%, 카드 +1",
+      "tier": 2,
+      "require": { "passives": ["exp_gain", "luck"] },
+      "effects": [
+        { "type": "playerStat", "key": "expBonus", "add": 0.2 },
+        { "type": "playerStat", "key": "luckBonusCards", "add": 1 }
+      ]
+    },
+    {
+      "id": "magnetic",
+      "name": "자성",
+      "description": "자석 + 신속 — 픽업 반경 +50%",
+      "tier": 2,
+      "require": { "passives": ["magnet", "move_speed"] },
+      "effects": [
+        { "type": "playerStat", "key": "pickupRadius", "mul": 1.5 }
+      ]
+    },
+    {
+      "id": "ranger",
+      "name": "사냥꾼",
+      "description": "마법구 + 부메랑 + 관통 — 투사체 관통 +2",
+      "tier": 3,
+      "require": { "weapons": ["magic_orb", "boomerang"], "passives": ["pierce"] },
+      "effects": [
+        { "type": "playerStat", "key": "pierceBonus", "add": 2 }
+      ]
+    },
+    {
+      "id": "cryomancer",
+      "name": "빙결술사",
+      "description": "한기 + 마법구 + 쿨다운 — 빙결 무기 쿨 -25%",
+      "tier": 3,
+      "require": { "weapons": ["frost", "magic_orb"], "passives": ["cooldown"] },
+      "effects": [
+        { "type": "weaponMul", "weapons": ["frost"], "key": "cooldown", "mul": 0.75 }
+      ]
+    },
+    {
+      "id": "plague_doctor",
+      "name": "역병 의사",
+      "description": "독장판 + 화염 + 회복력 — 독 + 화염 +30%",
+      "tier": 3,
+      "require": { "weapons": ["poison_field", "fire_aura"], "passives": ["regen"] },
+      "effects": [
+        { "type": "weaponMul", "weapons": ["poison_field", "fire_aura"], "key": "damage", "mul": 1.3 }
+      ]
+    },
+    {
+      "id": "duelist",
+      "name": "결투자",
+      "description": "검 + 강타 + 치명 — 검 데미지 +40%",
+      "tier": 3,
+      "require": { "weapons": ["sword"], "passives": ["knockback", "crit_chance"] },
+      "effects": [
+        { "type": "weaponMul", "weapons": ["sword"], "key": "damage", "mul": 1.4 }
+      ]
+    },
+    {
+      "id": "thunderlord",
+      "name": "뇌제",
+      "description": "번개 + 한기 + 치명타 — 번개 데미지 +50%",
+      "tier": 3,
+      "require": { "weapons": ["lightning", "frost"], "passives": ["crit_chance"] },
+      "effects": [
+        { "type": "weaponMul", "weapons": ["lightning"], "key": "damage", "mul": 1.5 }
+      ]
+    },
+    {
+      "id": "iron_will",
+      "name": "강철 의지",
+      "description": "방어구 + 체력 + 부활 — 최대 HP +30%",
+      "tier": 3,
+      "require": { "passives": ["armor", "max_hp"] },
+      "effects": [
+        { "type": "playerStat", "key": "maxHp", "mul": 1.3 }
+      ]
+    },
+    {
+      "id": "full_arsenal",
+      "name": "완벽한 무장",
+      "description": "무기 4 + 패시브 4 모두 보유 — 모든 데미지 +25%",
+      "tier": 4,
+      "require": { "weaponCount": 4, "passiveCount": 4 },
+      "effects": [
+        { "type": "playerStat", "key": "atk", "mul": 1.25 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "weapons": ["sword", "magic_orb", "fire_aura", "orbit_blade", "whip", "lightning", "poison_field", "boomerang", "frost"],
+  "passives": [
+    {
+      "id": "max_hp",
+      "name": "체력 강화",
+      "description": "최대 체력 +20",
+      "maxLevel": 5,
+      "effect": { "type": "stat", "key": "maxHp", "add": 20 }
+    },
+    {
+      "id": "move_speed",
+      "name": "신속",
+      "description": "이동 속도 +10%",
+      "maxLevel": 5,
+      "effect": { "type": "stat", "key": "speed", "mul": 1.1 }
+    },
+    {
+      "id": "atk_power",
+      "name": "공격력",
+      "description": "모든 데미지 +10%",
+      "maxLevel": 5,
+      "effect": { "type": "stat", "key": "atk", "mul": 1.1 }
+    },
+    {
+      "id": "cooldown",
+      "name": "쿨다운 감소",
+      "description": "무기 쿨다운 -8%",
+      "maxLevel": 5,
+      "effect": { "type": "stat", "key": "cooldownReduction", "add": 0.08 }
+    },
+    {
+      "id": "magnet",
+      "name": "자석",
+      "description": "젬 흡수 범위 +30%",
+      "maxLevel": 4,
+      "effect": { "type": "stat", "key": "pickupRadius", "mul": 1.3 }
+    },
+    {
+      "id": "exp_gain",
+      "name": "지식",
+      "description": "경험치 +15%",
+      "maxLevel": 4,
+      "effect": { "type": "stat", "key": "expBonus", "add": 0.15 }
+    },
+    {
+      "id": "crit_chance",
+      "name": "치명타",
+      "description": "치명타 확률 +8%",
+      "maxLevel": 5,
+      "effect": { "type": "stat", "key": "critChance", "add": 0.08 }
+    },
+    {
+      "id": "crit_dmg",
+      "name": "치명타 강화",
+      "description": "치명타 데미지 +25%",
+      "maxLevel": 4,
+      "effect": { "type": "stat", "key": "critDmg", "add": 0.25 }
+    },
+    {
+      "id": "regen",
+      "name": "회복력",
+      "description": "초당 HP +0.4 회복",
+      "maxLevel": 5,
+      "effect": { "type": "stat", "key": "regenRate", "add": 0.4 }
+    },
+    {
+      "id": "armor",
+      "name": "방어구",
+      "description": "받는 데미지 -1 (최소 1)",
+      "maxLevel": 5,
+      "effect": { "type": "stat", "key": "armor", "add": 1 }
+    },
+    {
+      "id": "luck",
+      "name": "행운",
+      "description": "레벨업 카드 +1개 표시",
+      "maxLevel": 3,
+      "effect": { "type": "stat", "key": "luckBonusCards", "add": 1 }
+    },
+    {
+      "id": "lifesteal",
+      "name": "흡혈",
+      "description": "처치당 1 HP 회복",
+      "maxLevel": 3,
+      "effect": { "type": "stat", "key": "lifesteal", "add": 1 }
+    },
+    {
+      "id": "knockback",
+      "name": "강타",
+      "description": "넉백 +30%",
+      "maxLevel": 3,
+      "effect": { "type": "stat", "key": "knockbackMul", "add": 0.3 }
+    },
+    {
+      "id": "pierce",
+      "name": "관통",
+      "description": "투사체 관통 +1",
+      "maxLevel": 3,
+      "effect": { "type": "stat", "key": "pierceBonus", "add": 1 }
+    },
+    {
+      "id": "thorns",
+      "name": "가시",
+      "description": "받은 데미지의 50%를 반사",
+      "maxLevel": 3,
+      "effect": { "type": "stat", "key": "thorns", "add": 0.5 }
+    },
+    {
+      "id": "berserk",
+      "name": "광전사",
+      "description": "HP 50% 미만일 때 공격력 +30%",
+      "maxLevel": 1,
+      "effect": { "type": "stat", "key": "berserk", "add": 1 }
+    }
+  ]
+}

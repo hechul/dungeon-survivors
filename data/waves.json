@@ -1,0 +1,24 @@
+{
+  "timeline": [
+    { "time": 0,    "spawnRate": 1.2, "enemies": ["slime"],                                       "hpMul": 1.0, "dmgMul": 1.0, "maxOnScreen": 30 },
+    { "time": 60,   "spawnRate": 1.5, "enemies": ["slime", "bat", "swarmer"],                     "hpMul": 1.2, "dmgMul": 1.0, "maxOnScreen": 40 },
+    { "time": 120,  "spawnRate": 1.8, "enemies": ["slime", "bat", "skeleton", "swarmer"],         "hpMul": 1.4, "dmgMul": 1.1, "maxOnScreen": 50, "elite": "skeleton", "eliteInterval": 60 },
+    { "time": 180,  "spawnRate": 2.0, "enemies": ["bat", "skeleton", "caster"],                   "hpMul": 1.5, "dmgMul": 1.2, "maxOnScreen": 55 },
+    { "time": 240,  "spawnRate": 2.2, "enemies": ["bat", "skeleton", "ghost", "caster"],          "hpMul": 1.7, "dmgMul": 1.2, "maxOnScreen": 55, "elite": "ghost", "eliteInterval": 50 },
+    { "time": 300,  "boss": "skeleton_king", "spawnRate": 2.0, "enemies": ["skeleton", "ghost"], "hpMul": 2.0, "dmgMul": 1.3, "maxOnScreen": 50 },
+    { "time": 360,  "spawnRate": 2.4, "enemies": ["skeleton", "ghost", "bomber"],                 "hpMul": 2.2, "dmgMul": 1.3, "maxOnScreen": 60 },
+    { "time": 420,  "spawnRate": 2.6, "enemies": ["skeleton", "ghost", "orc", "caster"],          "hpMul": 2.4, "dmgMul": 1.4, "maxOnScreen": 60, "elite": "orc", "eliteInterval": 45 },
+    { "time": 540,  "spawnRate": 2.8, "enemies": ["ghost", "orc", "bomber", "caster"],            "hpMul": 3.0, "dmgMul": 1.5, "maxOnScreen": 65 },
+    { "time": 600,  "boss": "dark_mage", "spawnRate": 3.0, "enemies": ["ghost", "orc"],          "hpMul": 3.5, "dmgMul": 1.6, "maxOnScreen": 60 },
+    { "time": 720,  "spawnRate": 3.2, "enemies": ["bat", "ghost", "orc", "bomber"],               "hpMul": 4.0, "dmgMul": 1.7, "maxOnScreen": 70, "elite": "ghost", "eliteInterval": 40 },
+    { "time": 840,  "spawnRate": 3.4, "enemies": ["bat", "ghost", "orc", "caster"],               "hpMul": 4.2, "dmgMul": 1.7, "maxOnScreen": 70 },
+    { "time": 960,  "spawnRate": 3.8, "enemies": ["skeleton", "ghost", "orc", "bomber"],          "hpMul": 4.8, "dmgMul": 1.8, "maxOnScreen": 75, "elite": "orc", "eliteInterval": 35 },
+    { "time": 1080, "spawnRate": 4.0, "enemies": ["orc", "ghost", "caster", "bomber", "giant"],   "hpMul": 5.2, "dmgMul": 1.9, "maxOnScreen": 80 },
+    { "time": 1200, "boss": "dragon", "spawnRate": 4.0, "enemies": ["orc", "ghost", "bomber"],   "hpMul": 5.5, "dmgMul": 2.0, "maxOnScreen": 80 },
+    { "time": 1320, "spawnRate": 4.3, "enemies": ["orc", "caster", "bomber", "swarmer", "sniper"],"hpMul": 6.5, "dmgMul": 2.1, "maxOnScreen": 85 },
+    { "time": 1440, "spawnRate": 4.5, "enemies": ["bat", "ghost", "orc", "bomber"],               "hpMul": 7.0, "dmgMul": 2.2, "maxOnScreen": 90, "elite": "orc", "eliteInterval": 30 },
+    { "time": 1560, "spawnRate": 4.8, "enemies": ["ghost", "orc", "caster", "bomber", "giant"],   "hpMul": 7.8, "dmgMul": 2.3, "maxOnScreen": 92 },
+    { "time": 1680, "spawnRate": 5.0, "enemies": ["skeleton", "ghost", "orc", "bomber", "sniper"],"hpMul": 8.5, "dmgMul": 2.4, "maxOnScreen": 95 },
+    { "time": 1800, "boss": "demon_king", "spawnRate": 5.0, "enemies": ["orc", "ghost", "bomber"], "hpMul": 10.0, "dmgMul": 2.5, "maxOnScreen": 100, "final": true }
+  ]
+}

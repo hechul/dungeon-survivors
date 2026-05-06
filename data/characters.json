@@ -1,0 +1,53 @@
+{
+  "warrior": {
+    "name": "검사",
+    "startWeapon": "sword",
+    "baseStats": {
+      "hp": 120,
+      "speed": 100,
+      "atk": 1.0,
+      "cooldownReduction": 0,
+      "expBonus": 0
+    },
+    "description": "근접 전투에 특화된 용사 (검/채찍 빌드)",
+    "affinitySynergies": ["blade_dance", "executioner", "duelist"],
+    "affinityBonus": 0.15,
+    "unlockCondition": "default",
+    "color": 5163263,
+    "spriteKey": "char_warrior"
+  },
+  "mage": {
+    "name": "마법사",
+    "startWeapon": "magic_orb",
+    "baseStats": {
+      "hp": 80,
+      "speed": 95,
+      "atk": 1.1,
+      "cooldownReduction": 0.05,
+      "expBonus": 0.1
+    },
+    "description": "원거리 마법으로 적을 제압 (원소/번개 빌드)",
+    "affinitySynergies": ["stormcaller", "elemental_storm", "thunderlord", "cryomancer"],
+    "affinityBonus": 0.15,
+    "unlockCondition": "kills:300",
+    "color": 14263551,
+    "spriteKey": "char_mage"
+  },
+  "ranger": {
+    "name": "사냥꾼",
+    "startWeapon": "boomerang",
+    "baseStats": {
+      "hp": 95,
+      "speed": 115,
+      "atk": 1.0,
+      "cooldownReduction": 0.1,
+      "expBonus": 0
+    },
+    "description": "기동성과 관통에 특화 (부메랑/투사체 빌드)",
+    "affinitySynergies": ["ranger", "ricochet", "speed_demon"],
+    "affinityBonus": 0.15,
+    "unlockCondition": "survive:600",
+    "color": 7340118,
+    "spriteKey": "char_ranger"
+  }
+}

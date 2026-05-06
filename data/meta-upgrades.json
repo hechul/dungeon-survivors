@@ -1,0 +1,58 @@
+{
+  "max_hp": {
+    "name": "체력 강화",
+    "description": "최대 체력 +10 (영구)",
+    "maxLevel": 10,
+    "baseCost": 50,
+    "costMul": 1.4,
+    "effect": { "type": "stat", "key": "maxHp", "add": 10 }
+  },
+  "move_speed": {
+    "name": "신속한 발걸음",
+    "description": "이동 속도 +3% (영구)",
+    "maxLevel": 8,
+    "baseCost": 80,
+    "costMul": 1.5,
+    "effect": { "type": "stat", "key": "speedMul", "add": 0.03 }
+  },
+  "atk_power": {
+    "name": "전투 훈련",
+    "description": "공격력 +5% (영구)",
+    "maxLevel": 10,
+    "baseCost": 100,
+    "costMul": 1.5,
+    "effect": { "type": "stat", "key": "atkMul", "add": 0.05 }
+  },
+  "exp_gain": {
+    "name": "성장의 비법",
+    "description": "경험치 +5% (영구)",
+    "maxLevel": 8,
+    "baseCost": 120,
+    "costMul": 1.6,
+    "effect": { "type": "stat", "key": "expBonusBase", "add": 0.05 }
+  },
+  "magnet_radius": {
+    "name": "자석 마력",
+    "description": "젬 흡수 반경 +10% (영구)",
+    "maxLevel": 6,
+    "baseCost": 80,
+    "costMul": 1.5,
+    "effect": { "type": "stat", "key": "pickupRadiusMul", "add": 0.1 }
+  },
+  "revive": {
+    "name": "부활의 깃털",
+    "description": "런당 +1회 부활 (영구)",
+    "maxLevel": 3,
+    "baseCost": 200,
+    "costMul": 2.0,
+    "effect": { "type": "stat", "key": "extraRevives", "add": 1 }
+  },
+  "luck_base": {
+    "name": "행운의 별",
+    "description": "치명타 확률 +2% (영구)",
+    "maxLevel": 5,
+    "baseCost": 150,
+    "costMul": 1.6,
+    "effect": { "type": "stat", "key": "critChanceBase", "add": 0.02 }
+  }
+}
